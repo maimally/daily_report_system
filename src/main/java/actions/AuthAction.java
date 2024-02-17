@@ -74,7 +74,7 @@ public class AuthAction extends ActionBase {
                 //トップページへリダイレクト
                 redirect(ForwardConst.ACT_TOP, ForwardConst.CMD_INDEX);
             }
-        }else {
+        } else {
             //認証失敗の場合
             //CSRF対策用トークンを設定
             putRequestScope(AttributeConst.TOKEN, getTokenId());

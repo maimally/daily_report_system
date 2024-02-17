@@ -41,7 +41,6 @@ public class FrontController extends HttpServlet {
         action.process();
     }
 
-
     /**
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
      */
@@ -75,7 +74,7 @@ public class FrontController extends HttpServlet {
                     .newInstance());
 
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | SecurityException
-                | IllegalArgumentException | InvocationTargetException| NoSuchMethodException e) {
+                | IllegalArgumentException | InvocationTargetException | NoSuchMethodException e) {
 
             //リクエストパラメータに設定されている"action"の値が不正の場合(例:action=xxxxx 等、該当するActionクラスがない場合)
             //エラー処理を行うActionオブジェクトを作成

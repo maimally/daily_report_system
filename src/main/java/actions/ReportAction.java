@@ -140,6 +140,7 @@ public class ReportAction extends ActionBase {
             }
         }
     }
+
     /**
      * 詳細画面を表示する
      * @throws ServletException
@@ -162,6 +163,7 @@ public class ReportAction extends ActionBase {
             forward(ForwardConst.FW_REP_SHOW);
         }
     }
+
     /**
      * 編集画面を表示する
      * @throws ServletException
@@ -190,6 +192,7 @@ public class ReportAction extends ActionBase {
         }
 
     }
+
     /**
      * 更新を行う
      * @throws ServletException
