@@ -5,7 +5,17 @@ import java.util.List;
 
 import models.Report;
 
+/**
+ * 日報データのDTOモデル⇔Viewモデルの変換を行うクラス
+ *
+ */
 public class ReportConverter {
+
+    /**
+     * ViewモデルのインスタンスからDTOモデルのインスタンスを作成する
+     * @param rv ReportViewのインスタンス
+     * @return Reportのインスタンス
+     */
 
     public static Report toModel(ReportView rv) {
         return new Report(
@@ -18,6 +28,11 @@ public class ReportConverter {
                 rv.getUpdatedAt());
     }
 
+    /**
+     * DTOモデルのインスタンスからViewモデルのインスタンスを作成する
+     * @param r Reportのインスタンス
+     * @return ReportViewのインスタンス
+     */
     public static ReportView toView(Report r) {
         if (r == null) {
             return null;
